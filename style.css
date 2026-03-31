@@ -8,8 +8,12 @@
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
+.logos_1{
+    border: 2px solid white;
+    border-radius: 5.4dvw;
+    border-width: 4.3dvw;
 }
-.logos{
+.logos_2{
     border: 2px solid white;
     border-radius: 5dvw;
 }
