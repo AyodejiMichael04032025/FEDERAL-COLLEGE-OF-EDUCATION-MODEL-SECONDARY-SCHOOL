@@ -1,3 +1,42 @@
+/* 1. The most important fix: Box Sizing */
+/* This ensures padding doesn't break your element widths */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Fluid Base Sizing */
+:root {
+  /* Scales from 16px to 24px based on screen size */
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif; /* Replace with your font */
+  overflow-x: hidden;      /* Prevents horizontal scrolling bugs */
+}
+
+/* 3. The Responsive Container */
+.container {
+  width: 90%;             /* Percentage based width for small screens */
+  max-width: 1200px;      /* Prevents it from getting too wide on monitors */
+  margin: 0 auto;         /* Centers the content */
+  
+  display: grid;
+  /* Columns snap from 1 column to many based on a 300px min-width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 4. Fluid Images */
+img {
+  max-width: 100%;        /* Prevents images from overflowing their parent */
+  display: block;
+}
+
+
 *{
     font-family: fantasy;
     ;
