@@ -1,0 +1,42 @@
+*{
+    font-family: fantasy;
+    ;
+    
+}
+.links{
+    background-color: lightgreen;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.logos{
+    border: 2px solid white;
+    border-radius: 5dvw;
+}
+.miviva{
+    border: 2px solid white;
+    border-radius: 1dvw;
+    background-color: yellowgreen;
+}
+#mivivaco{
+    background-color: yellowgreen;
+
+}
+.card{
+    
+    background: rgb(36, 128, 0);
+    backdrop-filter: blur;
+    border: 2px solid white;
+    border-radius: 3vdm;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0;
+}
+.AD{
+    font-size: large;
+}
+.about{
+    background-color: lightgreen;
+}
